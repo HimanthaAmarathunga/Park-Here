@@ -10,5 +10,5 @@ public interface ParkingSlotService {
     ParkingSlot addParkingSlot(ParkingSlot parkingSlot);
     List<ParkingSlot> getAllParkingSlots();
     ParkingSlot updateParkingSlot(ParkingSlot parkingSlot);
-    Optional<ParkingSlot> getParkingSlotById(String id);
+    Optional<ParkingSlot> getParkingSlotById(Long id);
 }

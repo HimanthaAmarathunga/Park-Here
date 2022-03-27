@@ -29,7 +29,7 @@ public class ParkingSlotServiceImpl implements ParkingSlotService {
         return parkingSlotRepository.save(parkingSlot);
     }
 
-    public Optional<ParkingSlot> getParkingSlotById(String id) {
+    public Optional<ParkingSlot> getParkingSlotById(Long id) {
         return parkingSlotRepository.findById(id);
     }
 }

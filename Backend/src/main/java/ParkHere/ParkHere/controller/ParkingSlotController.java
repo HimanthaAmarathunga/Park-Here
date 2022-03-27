@@ -18,12 +18,7 @@ public class ParkingSlotController {
 
     @PostMapping("/addSlot")
     public ParkingSlot addParkingSlot(@RequestBody ParkingSlot parkingSlot) {
-//        try {
             return parkingSlotService.addParkingSlot(parkingSlot);
-//        }catch (NullPointerException e) {
-//            e.printStackTrace();
-//        }
-//        return parkingSlot;
     }
 
     @GetMapping("/getAllParkingSlots")
@@ -37,7 +32,7 @@ public class ParkingSlotController {
     }
 
     @GetMapping("/getParkingSlotById/{id}")
-    public Optional<ParkingSlot> getParkingSlotById(@PathVariable String id) {
+    public Optional<ParkingSlot> getParkingSlotById(@PathVariable Long id) {
         return parkingSlotService.getParkingSlotById(id);
     }
 }
